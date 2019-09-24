@@ -57,5 +57,17 @@ namespace Organization_Zero
         {
             Close();
         }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            Form cp = new ChangePassCrMen();
+            Hide();
+            DialogResult res = cp.ShowDialog();
+            if (res != DialogResult.Cancel)
+            {
+                Show();
+            }
+            else Close();
+        }
     }
 }

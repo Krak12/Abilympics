@@ -10,5 +10,7 @@ namespace Organization_Zero
     {
         public static dbDataSet.WorkersRow UserAutorized;
         public static long UserID;
+        public static string PassCr;
+        public static string PassSp;
     }
 }

@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.ordersDataGridView = new System.Windows.Forms.DataGridView();
@@ -54,9 +55,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.workersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.typeServicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -83,26 +86,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.ordersTableAdapter = new Organization_Zero.dbDataSetTableAdapters.OrdersTableAdapter();
             this.tableAdapterManager = new Organization_Zero.dbDataSetTableAdapters.TableAdapterManager();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.typeServicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.typeServicesTableAdapter = new Organization_Zero.dbDataSetTableAdapters.TypeServicesTableAdapter();
-            this.workersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.workersTableAdapter = new Organization_Zero.dbDataSetTableAdapters.WorkersTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeServicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeServicesBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -208,6 +208,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(439, 289);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Organization_Zero.Properties.Resources.Снимок;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(439, 289);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
@@ -332,12 +342,14 @@
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Location = new System.Drawing.Point(568, 679);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(162, 49);
             this.button5.TabIndex = 9;
             this.button5.Text = "Отправить";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -365,6 +377,11 @@
             this.comboBox2.Size = new System.Drawing.Size(328, 46);
             this.comboBox2.TabIndex = 6;
             this.comboBox2.ValueMember = "TypeAcc";
+            // 
+            // workersBindingSource
+            // 
+            this.workersBindingSource.DataMember = "Workers";
+            this.workersBindingSource.DataSource = this.dbDataSet;
             // 
             // label5
             // 
@@ -394,6 +411,11 @@
             this.comboBox1.Size = new System.Drawing.Size(707, 46);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.ValueMember = "ID";
+            // 
+            // typeServicesBindingSource
+            // 
+            this.typeServicesBindingSource.DataMember = "TypeServices";
+            this.typeServicesBindingSource.DataSource = this.dbDataSet;
             // 
             // label3
             // 
@@ -446,21 +468,26 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Location = new System.Drawing.Point(502, 252);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(236, 96);
             this.button7.TabIndex = 20;
             this.button7.Text = "Редактировать профиль";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Location = new System.Drawing.Point(502, 156);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(236, 90);
             this.button6.TabIndex = 19;
             this.button6.Text = "Изменить пароль";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // panel5
             // 
@@ -483,6 +510,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(209, 456);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(269, 45);
             this.textBox9.TabIndex = 16;
             // 
@@ -490,6 +518,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(209, 405);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(269, 45);
             this.textBox8.TabIndex = 15;
             // 
@@ -497,6 +526,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(209, 354);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(269, 45);
             this.textBox7.TabIndex = 14;
             // 
@@ -504,6 +534,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(209, 303);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(269, 45);
             this.textBox6.TabIndex = 13;
             // 
@@ -511,6 +542,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(209, 252);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(269, 45);
             this.textBox5.TabIndex = 12;
             // 
@@ -518,6 +550,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(209, 201);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(269, 45);
             this.textBox4.TabIndex = 11;
             // 
@@ -525,6 +558,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(209, 150);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(269, 45);
             this.textBox3.TabIndex = 10;
             // 
@@ -532,6 +566,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(209, 99);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(269, 45);
             this.textBox2.TabIndex = 9;
             // 
@@ -630,29 +665,9 @@
             this.tableAdapterManager.UpdateOrder = Organization_Zero.dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.WorkersTableAdapter = null;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Organization_Zero.Properties.Resources.Снимок;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(439, 289);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // typeServicesBindingSource
-            // 
-            this.typeServicesBindingSource.DataMember = "TypeServices";
-            this.typeServicesBindingSource.DataSource = this.dbDataSet;
-            // 
             // typeServicesTableAdapter
             // 
             this.typeServicesTableAdapter.ClearBeforeFill = true;
-            // 
-            // workersBindingSource
-            // 
-            this.workersBindingSource.DataMember = "Workers";
-            this.workersBindingSource.DataSource = this.dbDataSet;
             // 
             // workersTableAdapter
             // 
@@ -674,6 +689,7 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -682,11 +698,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeServicesBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeServicesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

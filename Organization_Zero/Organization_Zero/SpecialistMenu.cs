@@ -33,5 +33,44 @@ namespace Organization_Zero
             this.ordersTableAdapter.Fill(this.dbDataSet.Orders);
 
         }
+
+        //переходы по tabPage
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage2;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage4;
+        }
+
+        //закрытие формы
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            Form chp = new ChangePassCrMen();
+            Hide();
+            DialogResult res = chp.ShowDialog();
+            if (res != DialogResult.Cancel)
+            {
+                Show();
+            }
+            else Close();
+        }
     }
 }
