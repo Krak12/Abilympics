@@ -185,7 +185,7 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(118, 131);
+            this.button3.Location = new System.Drawing.Point(100, 131);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(219, 50);
             this.button3.TabIndex = 2;
@@ -197,7 +197,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(118, 75);
+            this.button2.Location = new System.Drawing.Point(100, 75);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(219, 50);
             this.button2.TabIndex = 1;
@@ -209,7 +209,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(118, 19);
+            this.button1.Location = new System.Drawing.Point(100, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 50);
             this.button1.TabIndex = 0;
@@ -323,7 +323,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(363, 29);
+            this.label1.Location = new System.Drawing.Point(307, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 38);
             this.label1.TabIndex = 0;
